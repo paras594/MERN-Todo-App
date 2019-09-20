@@ -1,6 +1,8 @@
 const dbName = "mern-todo";
 const mongoose = require("mongoose");
-const mongoURI = process.env.MONGODB_URI || `mongodb://localhost:27017/${dbName}`;
+const mongoURI =
+	`mongodb+srv://paras594:mongodbparas101@mern-todo-0pet9.mongodb.net/test?retryWrites=true&w=majority` ||
+	`mongodb://localhost:27017/${dbName}`;
 const options = {
 	useNewUrlParser: true
 };
