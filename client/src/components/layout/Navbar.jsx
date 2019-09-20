@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { logoutUser, setLoggedIn } from "../../redux/actions/authActions.js";
@@ -6,6 +6,9 @@ import { logoutUser, setLoggedIn } from "../../redux/actions/authActions.js";
 const Navbar = () => {
 	const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
 	const dispatch = useDispatch();
+
+	useEffect(() => {}, [isLoggedIn]);
+
 	const handleLogout = () => {
 		dispatch(logoutUser());
 		dispatch(setLoggedIn(false));
