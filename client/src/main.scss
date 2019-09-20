@@ -27,12 +27,15 @@ body {
    @media (max-width: 648px) {
       font-size: 13px;
    }
+   width: 100%;
 }
 body {
-   background: $dark-blue;
+   // background: $dark-blue;
+   background: black;
 }
 
 nav {
+   width: 100%;
    box-shadow: 0 2px 5px rgba(#000, 0.5);
    height: 3.8rem;
    background: $white;
@@ -195,7 +198,7 @@ p {
    h1 {
       font-size: 2.5rem;
       font-weight: 400;
-      padding: 0.8rem 0;
+      padding: 0.8rem 0.5rem;
       color: $white;
    }
 
@@ -226,7 +229,7 @@ p {
    margin: 1.9rem auto;
    width: 31.2rem;
    list-style-type: none;
-   @media (max-width: 400px) {
+   @media (max-width: 450px) {
       width: 90%;
    }
    li {

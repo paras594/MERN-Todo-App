@@ -9,7 +9,11 @@ import PrivateRoute from "./components/private-routes/PrivateRoute";
 import jwt_decode from "jwt-decode";
 import { useDispatch } from "react-redux";
 import setAuthToken from "./redux/utils/setAuthToken";
-import { logoutUser, setCurrentUser } from "./redux/actions/authActions";
+import {
+   logoutUser,
+   setCurrentUser,
+   setLoggedIn,
+} from "./redux/actions/authActions";
 import EditTodo from "./components/EditTodo.jsx";
 import TodoDetails from "./components/TodoDetails.jsx";
 
@@ -22,10 +26,12 @@ const App = () => {
       const dispatch = useDispatch();
 
       dispatch(setCurrentUser(decoded));
+      dispatch(setLoggedIn(true));
 
       const currentTime = Date.now() / 1000;
       if (decoded.exp < currentTime) {
          dispatch(logoutUser());
+         dispatch(setLoggedIn(false));
 
          window.location.href = "/login";
       }
