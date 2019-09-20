@@ -1,15 +1,13 @@
-const dbName = "mern-auth";
+const dbName = "mern-todo";
 const mongoose = require("mongoose");
-const mongoURI = `mongodb://localhost:27017/${dbName}`;
+const mongoURI = process.env.MONGODB_URI || `mongodb://localhost:27017/${dbName}`;
 const options = {
 	useNewUrlParser: true
 };
 
 mongoose.connect(mongoURI, options);
 
-mongoose.connection.on("connected", () =>
-	console.log("connected on:", mongoURI)
-);
+mongoose.connection.on("connected", () => console.log("connected on:", mongoURI));
 
 mongoose.connection.on("error", err => console.log("error:", err));
 
