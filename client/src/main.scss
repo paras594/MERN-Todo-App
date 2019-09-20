@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Playball&display=swap");
+// variables
+$white: #f2f2f2;
+$light-grey: #ccc;
+$blue: #2c3359;
+$dark-blue: #212640;
+$pink: #d9306e;
+$light-pink: #ff4c8d;
+$dark-pink: #8c2b59;
+
+// styles
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,
+body {
+   font-size: 16px;
+   height: 100%;
+   font-family: "sans-serif";
+   @media (max-width: 738px) {
+      font-size: 14px;
+   }
+
+   @media (max-width: 648px) {
+      font-size: 12px;
+   }
+
+   @media (max-width: 400px) {
+      font-size: 10px;
+   }
+}
+body {
+   background: $dark-blue;
+}
+
+nav {
+   box-shadow: 0 2px 5px rgba(#000, 0.5);
+   height: 3.8rem;
+   background: $white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1.8rem;
+}
+
+nav .nav-buttons {
+   display: flex;
+   align-items: center;
+}
+
+nav .nav-buttons .button {
+   text-decoration: none;
+   color: $white;
+   margin-left: 0.95rem;
+   padding: 0.5rem 1rem;
+   font-size: 1rem;
+   background: $pink;
+   border-radius: 0.25rem;
+   transition: background 0.2s ease;
+   border: none;
+   &:hover {
+      cursor: pointer;
+      background: $dark-pink;
+   }
+}
+
+nav .nav-brand {
+   text-decoration: none;
+   color: $dark-blue;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+.landing {
+   margin-top: 4rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.landing h1,
+p {
+   text-align: center;
+}
+
+.landing h1 {
+   color: $white;
+   width: 75%;
+   font-size: 2.2rem;
+   margin: 0 auto;
+   font-weight: normal;
+
+   @media (max-width: 500px) {
+      font-size: 2rem;
+      width: 90%;
+   }
+}
+
+.landing p {
+   font-size: 1.1rem;
+   padding: 1.4rem;
+   color: $light-grey;
+
+   @media (max-width: 400px) {
+      padding: 1.45rem 2rem;
+   }
+}
+
+.landing .links {
+   margin-top: 1.2rem;
+   display: flex;
+}
+
+.landing .links a {
+   font-size: 1.1rem;
+   text-decoration: none;
+   margin: 0 1rem;
+   height: 2.4rem;
+   width: 6.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: $pink;
+   border-radius: 0.25rem;
+   color: $white;
+   transition: background 0.2s ease;
+   &:hover {
+      background: $dark-pink;
+   }
+
+   @media (max-width: 500px) {
+      font-size: 1rem;
+   }
+}
+
+.form-container {
+   margin-top: 1.6rem;
+   text-align: center;
+
+   h1 {
+      padding: 1rem;
+      font-weight: 400;
+      color: $white;
+   }
+
+   input {
+      display: block;
+      margin: 0.9rem auto 2px;
+      font-size: 1.2rem;
+      padding: 0.8rem 0.6rem;
+      width: 18.75rem;
+      height: 2.5rem;
+      border: 2px solid $white;
+      border-radius: 0.25rem;
+      background: $white;
+      color: $dark-blue;
+      &:active,
+      &:focus {
+         border: 2px solid $pink;
+         outline: none;
+      }
+   }
+
+   p.input-error {
+      margin: 0 auto;
+      padding: 0.3rem;
+      width: 18.75rem;
+      text-align: left;
+      color: $light-pink;
+      font-size: 0.9rem;
+   }
+
+   button {
+      margin-top: 1rem;
+      background: $pink;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-size: 1.1rem;
+      color: $white;
+      transition: background 0.2s ease;
+      outline: none;
+      &:hover {
+         background: $dark-pink;
+         cursor: pointer;
+      }
+   }
+}
+
+.dashboard {
+   text-align: center;
+   margin-top: 3.5rem;
+
+   h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      padding: 0.8rem 0;
+      color: $white;
+   }
+
+   .capitalize {
+      font-family: "Playball", cursive;
+      text-transform: capitalize;
+      font-size: 2.7rem;
+   }
+
+   button {
+      // margin-top: 30px;
+      background: $pink;
+      // border: 1px solid #333;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      color: $white;
+      transition: background 0.2s ease;
+
+      &:hover {
+         background: $dark-pink;
+         cursor: pointer;
+      }
+   }
+}
+
+.todolist {
+   margin: 1.9rem auto;
+   width: 31.2rem;
+   list-style-type: none;
+   li {
+      background: $white;
+      border-radius: 0.25rem;
+      padding: 0.5rem 0.7rem;
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+         flex: 1;
+         display: block;
+         color: $dark-blue;
+         text-decoration: none;
+         text-align: left;
+         margin-left: 0.7rem;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+      .actions {
+         display: flex;
+         align-items: center;
+      }
+
+      .edit {
+         margin: 0 0.7rem;
+         color: $blue;
+         font-size: 1.2rem;
+
+         &:hover {
+            color: $dark-blue;
+         }
+      }
+
+      button {
+         outline: none;
+         border: none;
+         background: none;
+         color: $pink;
+         margin: 0 0.4rem;
+         font-size: 1.2rem;
+
+         &:hover {
+            background: none;
+            color: $dark-pink;
+         }
+      }
+   }
+}
+
+.details {
+   width: 70%;
+   margin: 0 auto;
+   padding: 1.2rem;
+
+   h1 {
+      font-weight: normal;
+      color: $white;
+      padding: 1.2rem 0;
+   }
+
+   hr {
+      border-color: $pink;
+      margin-bottom: 1.6rem;
+   }
+
+   p {
+      font-size: 1.2rem;
+      color: $white;
+      text-align: left;
+
+      padding: 0.5rem 0.5rem;
+   }
+}
+
+::selection {
+   background: $pink;
+   color: $white;
+}

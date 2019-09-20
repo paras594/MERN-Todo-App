@@ -1,0 +1,30 @@
+{
+   "name": "nodejs-mongodb-ejs-starter",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "nodemon server",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm start\" \"npm run client\""
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "express-ejs-layouts": "^2.5.0",
+      "is-empty": "^1.2.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.6.9",
+      "passport": "^0.4.0",
+      "passport-jwt": "^4.0.0",
+      "validator": "^11.1.0"
+   },
+   "devDependencies": {
+      "concurrently": "^4.1.2",
+      "eslint-plugin-react": "^7.14.3"
+   }
+}
