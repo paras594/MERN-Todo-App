@@ -89,6 +89,7 @@ const Register = props => {
                name="password"
                id="password"
                type="password"
+               autocomplete="new-password"
                placeholder="password"
             />
             <p className="input-error">{errors.password}</p>
@@ -98,6 +99,7 @@ const Register = props => {
                id="password2"
                value={state.password2}
                type="password"
+               autocomplete="new-password"
                placeholder="confirm password"
             />
             <p className="input-error">{errors.password2}</p>

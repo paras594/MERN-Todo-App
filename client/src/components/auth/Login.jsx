@@ -79,6 +79,7 @@ const Login = props => {
                name="password"
                id="password"
                type="password"
+               autocomplete="new-password"
                placeholder="Password"
             />
             <p className="input-error">
