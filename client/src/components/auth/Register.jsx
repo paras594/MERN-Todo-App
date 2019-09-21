@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 // import { registerUser } from "../../redux/actions/authActions";
 import Axios from "axios";
@@ -16,6 +16,15 @@ const Register = props => {
    // const dispatch = useDispatch();
    const isAuth = useSelector(state => state.auth.isAuthenticated);
    // const getErrors = useSelector(state => state.errors);
+
+   useEffect(() => {
+      setState({
+         name: "",
+         email: "",
+         password: "",
+         password2: "",
+      });
+   }, []);
 
    if (isAuth) {
       props.history.push("/dashboard");

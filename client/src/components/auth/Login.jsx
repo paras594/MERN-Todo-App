@@ -17,6 +17,10 @@ const Login = props => {
    // const isLoggedIn = useSelector(state => state.auth);
 
    useEffect(() => {
+      setState({
+         email: "",
+         password: "",
+      });
       if (isAuth) {
          props.history.push("/dashboard");
          dispatch(setLoggedIn(true));
