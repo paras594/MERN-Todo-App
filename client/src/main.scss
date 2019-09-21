@@ -18,6 +18,7 @@ $dark-pink: #8c2b59;
 html,
 body {
    font-size: 16px;
+   min-height: 650px;
    height: 100%;
    font-family: "sans-serif";
    @media (max-width: 738px) {
