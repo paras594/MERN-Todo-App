@@ -14,8 +14,8 @@ const Landing = ({ history }) => {
 
 	return (
 		<div className="landing">
-			<h1>Welcome to the most awesome todo app in the world !</h1>
-			<p>Specially made for you to note and list your tasks securely.</p>
+			<h1>Welcome to the most awesome tasks list app in the world !</h1>
+			<p>Register and login to add, edit, delete your daily tasks.</p>
 			<div className="links">
 				<Link to="/register">Register</Link>
 				{/*<Link to="/dashboard">Dashboard</Link>*/}

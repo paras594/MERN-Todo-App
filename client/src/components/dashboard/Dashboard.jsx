@@ -45,7 +45,7 @@ const Dashboard = () => {
 	return (
 		<div className="dashboard">
 			<h1>
-				Welcome to Todo App, <span className="capitalize">{user.name}</span>{" "}
+				Add your tasks here, <span className="capitalize">{user.name}</span>{" "}
 			</h1>
 			{/*<p>You are logged in to your account</p>*/}
 			<AddTodo addTodo={addTodo} />
