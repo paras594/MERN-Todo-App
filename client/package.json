@@ -16,6 +16,7 @@
    "license": "ISC",
    "proxy": "http://localhost:8080",
    "devDependencies": {
+      "prop-types": "latest",
       "babel-eslint": "latest",
       "eslint": "latest",
       "eslint-plugin-react": "latest",
@@ -50,7 +51,6 @@
       "jwt-decode": "latest",
       "moment": "latest",
       "mqpacker": "latest",
-      "prop-types": "latest",
       "react-redux": "latest",
       "redux": "latest"
    }
