@@ -22,7 +22,7 @@
 		"mongoose": "^5.8.4",
 		"passport": "^0.4.1",
 		"passport-jwt": "^4.0.0",
-		"validator": "^11.1.0"
+		"validator": "^13.7.0"
 	},
 	"devDependencies": {
 		"concurrently": "^4.1.2"
